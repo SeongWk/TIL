@@ -1,0 +1,32 @@
+import java.util.Stack;
+public class mainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		//stack은 LIFO Last In First-Out
+		//push() to add to the Top
+		//pop() to remove from the Top
+		Stack<String> stack = new Stack<String>();
+		
+		stack.push("a");
+		stack.push("b");
+		stack.push("c");
+		
+		//stack 출력 
+		System.out.println(stack); 
+		// 가장 맨위에 있는 value 출력 
+		System.out.println(stack.peek());
+		// 해당하는 스택 값 출력 
+		// c,b,a 순으로 차례대로 쌓여서 a는 3을 나타냄 
+		System.out.println(stack.search("a"));
+		
+		
+		stack.pop();
+		stack.pop();
+		stack.pop();
+		System.out.println(stack);
+	}
+
+}
